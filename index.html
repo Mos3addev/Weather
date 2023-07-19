@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Mos3ad" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+  <link rel="icon" href="imges/logo.png" />
+  <title>Weather</title>
+</head>
+
+<body class="bg-cover">
+  <!-- *** navbar section *** -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-nowrap py-4 px-5">
+      <a class="navbar-brand" href="index.html">
+        <div class="d-flex">
+          <div><img src="imges/logoone.png" alt="Weather logo" /></div>
+          <div class="px-3">
+            <h1 class="fs-h1 fw-bold text-white">Weather</h1>
+            <p class="fs-12px text-white">tagline goes here</p>
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-info"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="
+                nav-item
+                mx-4
+                px-3
+                border-radius border border-2 border-info
+              ">
+            <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-white" href="#">News</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-white" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- *** weather condition section *** -->
+  <div class="container my-5 py-2">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="pt-5">
+          <h2 class="text-info fs-3 mb-4">weather condition</h2>
+          <p class="text-white parag-style fs-5">
+            Having an up to date information about the weather helps us to
+            take well-read decisions. These weather website constantly update
+            the forecasts for a day or hour or sometimes for even a minute.
+            These can be simply termed as the compact weather devices, as they
+            do not only tell about the temperature of that specific region
+            instead they can describe the accurate time of the sunrise and
+            sunset, the time of the rainfall, humidity levels, etc.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="">
+          <img src="imges/raining-animate-1.svg" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *** main section *** -->
+  <section class="display-temp my-5 py-2 bg-img">
+    <div class="container">
+      <!-- *** search section *** -->
+      <form class="d-flex bg-cover border-radius-2 my-5">
+        <input class="form-control py-3 border-0 border-radius-2 me-2 bg-cover" type="search"
+          placeholder="Find Your Location..." aria-label="Search" id="searchBar" />
+        <button class="btn btn-primary border-radius-2 px-5 border-cover-color" type="submit">
+          Find
+        </button>
+      </form>
+      <div class="city-temp row">
+        <!-- *** Today's Card *** -->
+        <div class="col-md-4 pb-3">
+          <div class="temp-card shadow">
+            <div class="day-and-date d-flex justify-content-between">
+              <p id="today"></p>
+              <p id="todayDate"></p>
+            </div>
+
+            <div class="temp-datails">
+              <p id="cityLocation"></p>
+              <div class="d-flex justify-content-between my-4">
+                <div class="pt-3">
+                  <h2 id="todayDegree" class="d-inline-block"></h2>
+                  <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                </div>
+                <img id="todayIcon" width="90" />
+              </div>
+              <p id="todayDescription"></p>
+              <div class="details">
+                <i class="fas fa-umbrella pr-1"></i>
+                <span id="percentage"></span> <span>%</span>
+
+                <i class="fas fa-wind pl-3 pr-1"></i>
+                <span id="wind"></span> <span>km/h</span>
+
+                <i class="far fa-compass pl-3 pr-1"></i>
+                <span id="compass"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- *** Next Days Cards *** -->
+        <div class="col-md-4 pb-3">
+          <div class="temp-card text-center shadow">
+            <div class="day-and-date d-flex justify-content-between">
+              <p class="nextDay"></p>
+              <p class="nextDate"></p>
+            </div>
+
+            <div class="temp-datails">
+              <div>
+                <img class="nextDayIcon" width="90" />
+              </div>
+              <h2 class="max-degree d-inline-block"></h2>
+              <h2 class="d-inline-block"><sup>o</sup>C</h2>
+              <br />
+              <p class="min-degree d-inline-block"></p>
+              <p class="d-inline-block"><sup>o</sup>C</p>
+              <p class="nextDayDescription"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 pb-3">
+          <div class="temp-card text-center shadow">
+            <div class="day-and-date d-flex justify-content-between">
+              <p class="nextDay"></p>
+              <p class="nextDate"></p>
+            </div>
+
+            <div class="temp-datails">
+              <div>
+                <img class="nextDayIcon" width="90" />
+              </div>
+              <h2 class="max-degree d-inline-block"></h2>
+              <h2 class="d-inline-block"><sup>o</sup>C</h2>
+              <br />
+              <p class="min-degree d-inline-block"></p>
+              <p class="d-inline-block"><sup>o</sup>C</p>
+              <p class="nextDayDescription"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- *** footer section *** -->
+  <footer class="container-fluid bg-footer py-5">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-8 pb-3">
+          <form class="d-flex bg-cover border-radius-2">
+            <input class="form-control py-3 border-0 border-radius-2 me-2 bg-cover" type="search"
+              placeholder="Enter Your Email To subscribe..." aria-label="Search" />
+            <button class="btn btn-primary border-radius-2 px-5 border-cover-color" type="submit">
+              subscribe
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social">
+            <a href="https://web.facebook.com/profile.php?id=100009042109024" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ahmedmos3add/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
+            <a href="https://www.linkedin.com/in/ahmedmos3add/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-white text-center">Copyright © 2023 Mos3ad Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

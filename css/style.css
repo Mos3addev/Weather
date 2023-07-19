@@ -1,0 +1,132 @@
+* {
+  font-family: century-gothic, sans-serif;
+}
+
+.bg-cover {
+  background-color: #1e202b;
+}
+
+.fs-h1 {
+  font-size: 1.1rem;
+}
+
+.fs-12px {
+  font-size: .75rem;
+}
+
+.border-radius {
+  border-radius:1rem ;
+}
+
+.nav-link {
+  padding: 0rem 1rem;
+}
+
+.nav-item:hover{
+  border: solid .15rem  #0dcaf0;
+  border-radius: 1rem;
+  padding: 0rem 1rem;
+}
+
+.border-radius-2 {
+  border-radius: 2rem;
+}
+
+.border-cover-color {
+  border: solid .3rem  #1e202b;
+}
+
+.parag-style {
+  line-height: 1.6;
+}
+
+/* .display-temp .search {width: 32%;}; */
+
+.display-temp #search-bar {
+  padding: 5px 15px;
+  border: 1px solid #3199ab;
+  border-radius: 20px;
+}
+
+.display-temp .temp-card {
+  /* width: 32%; */
+  border-radius: 8px;
+}
+
+.display-temp .temp-card:first-of-type {
+  background-color: #3199ab;
+}
+.display-temp .temp-card:first-of-type h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.display-temp .temp-card:first-of-type .day-and-date {
+  background-color: #374850;
+}
+
+.display-temp .temp-card:nth-of-type(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.display-temp .temp-card:nth-of-type(2), 
+.display-temp .temp-card:nth-of-type(3) {
+  background-color: #83bbc4;
+  transition: all 0.3s;
+}
+
+.display-temp .temp-card:nth-of-type(2):hover,
+.display-temp .temp-card:nth-of-type(3):hover {background-color: #3199ab;}
+
+.display-temp .temp-card .day-and-date {
+  background-color: #455a64;
+  color: #bfc1c8;
+  padding: 10px 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.display-temp .temp-card .day-and-date p {margin: 0 !important;}
+
+.display-temp .temp-card #cityLocation {
+  font-size: 22px;
+  text-shadow: 0 0 1px #fff,  0 0 1px #fff;
+}
+
+.display-temp .temp-card .temp-datails {
+  padding: 25px;
+  color: #fff;
+}
+
+.display-temp .temp-card .temp-datails #todayDescription,
+.display-temp .temp-card .temp-datails .nextDayDescription {
+  font-size: 14px;
+  color: #455a64;
+  text-shadow: 0 0 1px #455a64,  0 0 1px #455a64;
+}
+
+.bg-img {
+  background-image: url(../imges/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-footer {
+  
+  background-color: #262936;
+}
+
+.social a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 1.4285714286em;
+}
